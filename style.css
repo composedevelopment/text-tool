@@ -1,0 +1,50 @@
+:root {
+  --textcolor: 308;
+}
+
+body {
+  background-color: #2040BB;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  max-width: 70vw;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  resize: none;
+}
+
+.mod {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 10px auto;
+  background-color: rgb(127, 185, 255);
+  color: rgb(233, 105, 175);
+}
+
+.center {
+  margin: 1em auto;
+  text-align: center;
+  color: hsl(var(--textcolor), 100%, 50%);
+  font-weight: 900;
+}
+
+.generate {
+  max-width: 8em;
+  padding: 8px;
+  margin-top: 0px;
+  border: 2px solid black;
+  background-color: #202030;
+  cursor: pointer;
+  border-radius: 6px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input">
+      <textarea name="textInput" id="input" rows="10" cols="100" placeholder="Input text here 😊"></textarea>
+    </div>
+    <div class="modifierHeading center">
+      Modifiers:
+      <div class="mod">
+        🇪 🇲 🇴 🇯 🇮 🇫 🇾
+        <input id="emojify" type="checkbox">
+      </div>
+      <div class="mod">
+        ˢᵐᵃˡˡᶦᶠʸ
+        <input id="smallify" type="checkbox">
+      </div>
+      <div class="mod">
+        REPLACE LETTERS/WORDS/PHRASES<br>
+        (separated by comma, and can target spaces)<br><br>
+        <input id="wordsToSwap" size="40px" placeholder="g,G,pizza, ,good morning"><br>
+        replace with:<br>
+        <input id="wordsSwapTo" placeholder="spaghetti">
+      </div>
+    </div>
+    <div class="replaceWith"></div>
+    <div class="generate center" onclick="generate()">
+      Generate text
+    </div>
+    <div class="input">
+      <textarea name="textInput" id="result" rows="10" cols="100" placeholder="Results generated here"
+        readonly></textarea>
+    </div>
+    <div class="generate center" onclick="swapResult()">
+      Use result as input
+    </div>
+  </div>
+</body>
+
+</html>
